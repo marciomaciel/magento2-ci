@@ -20,7 +20,7 @@ jobs:
       if: always()
       uses: marciomaciel/magento2-ci-actions@master
       env:
-        COMPOSER_AUTH: {{secrets.COMPOSER_AUTH}}
+        COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
       with:
         process: 'build'
 
