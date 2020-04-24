@@ -21,4 +21,3 @@ jobs:
       uses: marciomaciel/magento2-ci-actions@master
       with:
         process: 'build'
-
