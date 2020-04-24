@@ -19,5 +19,8 @@ jobs:
     - name: 'launch magento2 build step'
       if: always()
       uses: marciomaciel/magento2-ci-actions@master
+      env:
+        COMPOSER_AUTH: {{secrets.COMPOSER_AUTH}}
       with:
         process: 'build'
+
